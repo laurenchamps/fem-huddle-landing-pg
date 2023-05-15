@@ -16,6 +16,10 @@ body {
     justify-content: space-between;
 }
 
+.logo {
+    max-width: 10px;
+}
+
 main {
     text-align: center;
     padding: 2em;
@@ -61,7 +65,31 @@ button {
     box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
 }
 
-@media (min-width: 900px) {
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: #ffffff; 
+}
+
+footer {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+section {
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+@media (min-width: 1000px) {
     body {
         background-image: url("img/bg-desktop.svg");
         background-size: cover;
