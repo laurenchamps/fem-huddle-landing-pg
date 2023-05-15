@@ -16,6 +16,11 @@ body {
     justify-content: space-between;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .logo {
     max-width: 10px;
 }
@@ -58,7 +63,7 @@ p {
 
 button {
     color: hsl(257, 40%, 49%);
-    padding: 1em 6em;
+    padding: 1em 4em;
     font-size: 1rem;
     border-radius: 250px;
     border: none;
@@ -85,8 +90,17 @@ footer {
 }
 
 section {
-    padding-top: 2em;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
+}
+
+button:hover {
+    background-color: hsl(300, 70%, 78%);
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.fa-brands:hover {
+    color: hsl(300, 69%, 71%);
 }
 
 @media (min-width: 1000px) {
@@ -95,14 +109,23 @@ section {
         background-size: cover;
         background-attachment: fixed;
     }
+
+    header {
+        padding-bottom: 2em;
+    }
     
     main {
         display: flex;
         justify-content: center;
-        padding: 4em;
+        gap: 2em;
     }
 
     .container {
         text-align: left;
+    }
+
+    .social-icons {
+        justify-content: flex-end;
+        padding: 3em;
     }
 }
